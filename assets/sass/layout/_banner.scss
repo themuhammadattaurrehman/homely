@@ -1,0 +1,43 @@
+
+.banner{
+  background: url(../media/banner/banner-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1157px;
+  padding: 418px 0 0;
+  @include media-query(1199px) {
+    padding: 300px 0 0;
+    height: 900px;
+  }
+  @include media-query(991px) {
+    padding: 250px 0 0;
+    height: 800px;
+  }
+  @include media-query(768px) {
+    padding: 200px 0 0;
+    height: 750px;
+  }
+  h2{
+    font-weight: 600;
+    font-size: 99px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;   
+    color: $white;
+    @include media-query(1199px) {
+      font-size: 80px;
+    }
+    @include media-query(991px) {
+      font-size: 70px;
+    }
+    @include media-query(768px) {
+      font-size: 60px;
+    }
+    @include media-query(492px) {
+      font-size: 40px;
+    }
+  }
+
+}
